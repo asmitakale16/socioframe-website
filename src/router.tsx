@@ -1,4 +1,6 @@
-import { createRouter, useRouter } from "@tanstack/react-router";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createRouter, useRouter, RouterProvider } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
@@ -54,14 +56,33 @@ function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => vo
   );
 }
 
+// 1. Generate the static router instance configuration
 export const getRouter = () => {
-  const router = createRouter({
+  return createRouter({
     routeTree,
     context: {},
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
     defaultErrorComponent: DefaultErrorComponent,
   });
-
-  return router;
 };
+
+const router = getRouter();
+
+// Register the router instance for TanStack Type Safety
+declare module "@tanstack/react-router" {
+  interface Register {
+    router: typeof router;
+  }
+}
+
+// 2. Locate the root DOM node and mount the RouterProvider
+const rootElement = document.getElementById("root");
+if (rootElement && !rootElement.innerHTML) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  );
+}
