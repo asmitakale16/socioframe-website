@@ -75,14 +75,3 @@ declare module "@tanstack/react-router" {
     router: typeof router;
   }
 }
-
-// 2. Locate the root DOM node and mount the RouterProvider
-const rootElement = document.getElementById("root");
-if (rootElement && !rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  );
-}
