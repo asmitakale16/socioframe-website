@@ -1,6 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createRouter, useRouter, RouterProvider } from "@tanstack/react-router";
+import { createRouter, useRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
@@ -56,22 +54,14 @@ function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => vo
   );
 }
 
-// 1. Generate the static router instance configuration
 export const getRouter = () => {
-  return createRouter({
+  const router = createRouter({
     routeTree,
     context: {},
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
     defaultErrorComponent: DefaultErrorComponent,
   });
+
+  return router;
 };
-
-const router = getRouter();
-
-// Register the router instance for TanStack Type Safety
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router;
-  }
-}

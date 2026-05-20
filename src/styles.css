@@ -392,4 +392,15 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
+
+  .text-outline {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+  }
+  .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
 }
