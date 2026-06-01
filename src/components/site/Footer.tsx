@@ -44,8 +44,7 @@ const COLUMNS = [
   {
     title: "Connect",
     links: [
-      { label: "hello@socioframe.co", href: "mailto:hello@socioframe.co" },
-      { label: "Worldwide", href: "#" },
+      { label: "socioframeco@gmail.com", href: "mailto:socioframeco@gmail.com" },
     ],
   },
 ];
