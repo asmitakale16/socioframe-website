@@ -103,11 +103,11 @@ export function ContactCTA() {
                 Tell us about the brand you're building. SocioFrame & Co. responds personally within one business day.
               </p>
               <a
-                href="mailto:socioframeco4@gmail.com"
+                href="mailto:socioframeco@gmail.com"
                 className="mt-8 inline-flex items-center gap-3 text-sm text-foreground/90 transition-colors hover:text-[color:var(--gold)]"
               >
                 <Mail className="h-4 w-4 text-[color:var(--gold)]" />
-                socioframeco4@gmail.com
+                socioframeco@gmail.com
               </a>
             </motion.div>
 
