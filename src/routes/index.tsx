@@ -13,22 +13,6 @@ import { Toaster } from "@/components/ui/sonner";
 import { useTabTitle } from "@/hooks/use-tab-title";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "SocioFrame & Co. · Design. Market. Scale." },
-      {
-        name: "description",
-        content:
-          "A digital studio for design, development, and growth. We build refined online presences for modern brands.",
-      },
-      { property: "og:title", content: "SocioFrame & Co. · Design. Market. Scale." },
-      {
-        property: "og:description",
-        content:
-          "A digital studio for design, development, and growth. We build refined online presences for modern brands.",
-      },
-    ],
-  }),
   component: Index,
 });
 
