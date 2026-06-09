@@ -10,30 +10,20 @@ export function Story() {
           eyebrow="About Us"
           title={
             <>
-              About <span className="text-gradient-brand italic">SocioFrame & Co.</span>
+            <span className="text-gradient-brand italic">SocioFrame & Co.</span>
             </>
           }
-        />
-
+            />
         <StaggerText className="mx-auto mt-10 max-w-3xl space-y-5 text-center text-muted-foreground md:text-lg">
           <p>
-            SocioFrame & Co. is a digital studio dedicated to building refined, high-performing
-            online presence for modern brands.
-          </p>
+            SocioFrame & Co. is a digital studio that designs and builds high-performing online platforms for modern organizations.</p>
           <p>
-            Our work sits at the intersection of design, engineering, and digital strategy ·
-            brought together through a structured and considered approach. Rather than treating
-            these as isolated services, we integrate them into a unified system where each
-            decision supports performance, usability, and long-term scalability.
-          </p>
+            We combine visual design, frontend engineering, and data-driven marketing into a streamlined process, ensuring every technical and creative decision directly supports your long-term business scalability.</p>
           <p>
-            We collaborate with founders, startups, and growing businesses who understand the
-            value of strong digital foundations · not just visually, but functionally.
-          </p>
+            We partner with founders, startups, and expanding enterprises to establish reliable digital foundations that excel in both form and function.</p>
           <p>
-            As an independent and evolving studio, we remain intentionally focused: fewer
-            projects, deeper involvement, and higher attention to detail.
-          </p>
+            Operating as an independent studio allows us to prioritize technical precision and seamless integration with your business workflows.
+            We integrate closely with your team to deliver meticulous attention to detail, transparent communication, and digital assets built to scale fluidly as your business evolves.</p>
         </StaggerText>
       </div>
     </section>

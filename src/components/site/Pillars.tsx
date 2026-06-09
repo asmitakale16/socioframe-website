@@ -8,7 +8,7 @@ const STEPS: { num: string; title: string; desc: string; icon: LucideIcon }[] = 
   { num: "02", title: "Define", desc: "Establish a clear strategy, structure, and direction.", icon: Target },
   { num: "03", title: "Design", desc: "Craft refined, user-focused visual experiences.", icon: Pencil },
   { num: "04", title: "Develop", desc: "Build fast, responsive, and scalable digital platforms.", icon: Code2 },
-  { num: "05", title: "Grow", desc: "Continuously improve visibility, performance, and engagement.", icon: TrendingUp },
+  { num: "05", title: "Scale", desc: "Continuously improve visibility, performance, and engagement.", icon: TrendingUp },
 ];
 
 export function Pillars() {
@@ -31,7 +31,7 @@ export function Pillars() {
               A <span className="text-gradient-brand italic">Structured Approach.</span>
             </>
           }
-          subtitle="Our process is intentionally simple · designed to bring clarity and direction at every stage."
+          subtitle="Our process is intentionally simple - designed to bring clarity and direction at every stage."
         />
 
         <div ref={trackRef} className="relative mt-14">

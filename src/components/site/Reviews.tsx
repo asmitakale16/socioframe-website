@@ -28,8 +28,7 @@ export function Reviews() {
               Focused. Considered. <span className="text-gradient-brand italic">Reliable.</span>
             </h2>
             <p className="mt-5 text-muted-foreground md:text-lg">
-              We operate as a small, dedicated studio which allows us to stay closely involved in
-              every project.
+              A dedicated studio by design, ensuring executive focus and deep collaboration on every project.
             </p>
           </motion.div>
 
